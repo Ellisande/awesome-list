@@ -1,1 +1,22 @@
 /* CSS declarations go here */
+button {
+  background: #AA7777;
+  border-radius: 5px;
+  box-sizing: border-box;
+  min-width: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  transition: all 0.7s ease-in-out;
+}
+
+li:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #55F;
+  text-shadow: 1px 1px 4px yellow;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}

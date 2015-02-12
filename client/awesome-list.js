@@ -1,23 +1,24 @@
-if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
+Awesome = new Meteor.Collection('awesome');
 
-  Template.content.helpers({
-    counter: function () {
-      return Session.get('counter');
-    }
-  });
+Template.contents.helpers({
+  people: function () {
+    return Awesome.find({}, {sort: {score: -1}});
+  }
+});
 
-  Template.content.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });
-}
-
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
-}
+Template.contents.events({
+  'click .addPerson': function () {
+    var newName = $('#newPerson').val();
+    Awesome.insert({name: newName, score: 0});
+    $('#newPerson').val('');
+  },
+  'click .add': function(){
+    Awesome.update({_id: this._id}, {$set: {score: ++this.score}});
+  },
+  'click .subtract': function(){
+    Awesome.update({_id: this._id}, {$set: {score: --this.score}});
+  },
+  'click .remove': function(){
+    Awesome.remove({_id: this._id});
+  }
+});

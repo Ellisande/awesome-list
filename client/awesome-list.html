@@ -3,5 +3,30 @@
 </head>
 
 <body>
-  {{> content}}
+  {{> contents}}
 </body>
+
+<template name="contents">
+  <div>
+    <div class="hero">
+      <header>
+        <div class="logo">
+          Awesome List
+        </div>
+        <nav>
+        </nav>
+      </header>
+    </div>
+    <div>
+      <main>
+        <ol>
+          {{#each people}}
+            <li>{{name}} : {{score}} <button class="add">+</button><button class="subtract">-</button><button class="remove">x</button></li>
+          {{/each}}
+        </ol>
+        <input id="newPerson" />
+        <button class="addPerson">Add</button>
+      </main>
+    </div>
+  </div>
+</template>
