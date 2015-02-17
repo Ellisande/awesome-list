@@ -1,1 +1,1 @@
-Awesome = new Meteor.Collection('awesome');
+People = new Meteor.Collection('people');
