@@ -1,5 +1,6 @@
 <head>
   <title>Awesome-List</title>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -10,22 +11,22 @@
   <div>
     <div class="hero">
       <header>
-        <div class="logo">
-          Awesome List
-        </div>
+        <div class="logo">Awesome List</div>
         <nav>
         </nav>
       </header>
     </div>
     <div>
       <main>
+        <div class="middle">
+          <input id="newPerson" />
+          <button class="addPerson">Add</button>
+        </div>
         <ol>
           {{#each people}}
-            <li>{{name}} : {{score}} <button class="add">+</button><button class="subtract">-</button><button class="remove">x</button></li>
+            <li><span>{{name}} : {{score}}</span><button class="add">+</button><button class="subtract">-</button><button class="remove">x</button></li>
           {{/each}}
         </ol>
-        <input id="newPerson" />
-        <button class="addPerson">Add</button>
       </main>
     </div>
   </div>

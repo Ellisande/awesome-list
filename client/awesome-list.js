@@ -2,7 +2,7 @@ Awesome = new Meteor.Collection('awesome');
 
 Template.contents.helpers({
   people: function () {
-    return Awesome.find({}, {sort: {score: -1}});
+    return Awesome.find({}, {sort: {score: -1}, limit: 5});
   }
 });
 
