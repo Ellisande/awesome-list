@@ -53,10 +53,12 @@ Thats all there is too it. When the console tells you meteor is ready go to http
 
 The base meteor project will put everything at the root initially. You'll quickly find that this is... not optimal. I suggest the following project structure:
 
+```
 awesome-list
  -> client
  -> server
  -> public
+```
 
 These folder names are special to Meteor and it will know that things in client and public should be served to the user, while code in the server folder is server-side only. This will let you easily differentiate between the different code without having to put ```if(Meteor.isServer())``` all over your code.
 
