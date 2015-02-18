@@ -20,11 +20,16 @@
       <main>
         <div class="middle">
           <input id="newPerson" />
-          <button class="addPerson">Add</button>
+          <button id="addPerson">Add</button>
         </div>
         <ol>
           {{#each topPeople}}
-            <li><span>{{name}} : {{score}}</span><button class="add">+</button><button class="subtract">-</button><button class="remove">x</button></li>
+            <li>
+              <span>{{name}} : {{score}}</span>
+              <button class="add">+</button>
+              <button class="subtract">-</button>
+              <button class="remove">x</button>
+            </li>
           {{/each}}
         </ol>
       </main>

@@ -1,4 +1,4 @@
 var dude = {
-  "name": newName,
+  "name": "newName",
   "score": 0
 }

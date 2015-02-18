@@ -64,8 +64,7 @@ ol {
   padding: 0;
   width: 100%;
   height: 300px;
-  background-image: url('long-zig.JPG');
-  background-repeat: no-repeat;
+  background: radial-gradient(transparent, rgba(255, 255, 255, 0.5)), url('long-zig.JPG') no-repeat center; /* Standard syntax */
   background-size: cover;
   background-position: center;
   font-family: 'Lobster', cursive;
@@ -75,14 +74,6 @@ ol {
   font-size: 5rem;
   position: relative;
 }
-
-/*.hero {
-  background: radial-gradient(
-      rgba(#008fac, 0.40),
-      rgba(#008FAC, 1)
-    ), url('../images/bg.jpg') no-repeat;
-  background-size: cover;
-}*/
 
 .logo {
   position: absolute;

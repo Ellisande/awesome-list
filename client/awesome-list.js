@@ -7,7 +7,7 @@ Template.contents.helpers({
 });
 
 Template.contents.events({
-  'click .addPerson': function () {
+  'click #addPerson': function () {
     var newName = $('#newPerson').val();
     People.insert({name: newName, score: 0});
     $('#newPerson').val('');
