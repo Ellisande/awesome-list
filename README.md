@@ -436,6 +436,10 @@ Should be routine by now, if we want to add an event the first stop is HTML. Let
 </ol>
 ```
 
+Check your browser to ensure you have a pretty x button, because you should.
+
+6.2 The Execution
+
 Now we bind the event to the remove buttons. And guess what function we'll use from our collection? Yup. It's remove.
 
 ```javascript
