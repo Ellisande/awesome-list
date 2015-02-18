@@ -9,9 +9,10 @@ Template.contents.helpers({
 Template.contents.events({
   'click #addPerson': function () {
     var newName = $('#newPerson').val();
-    People.insert(
-      {name: newName, score: 0}
-    );
+    People.insert({name: newName, score: 0});
     $('#newPerson').val('');
+  },
+  'click .add': function(){
+    People.update({_id: this._id}, {name: this.name, score: ++this.score});
   }
 });
