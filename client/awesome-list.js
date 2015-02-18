@@ -14,5 +14,8 @@ Template.contents.events({
   },
   'click .add': function(){
     People.update({_id: this._id}, {name: this.name, score: ++this.score});
+  },
+  'click .subtract': function(){
+    People.update({_id: this._id}, {$set: {score: --this.score}});
   }
 });
