@@ -13,9 +13,12 @@ Template.contents.events({
     $('#newPerson').val('');
   },
   'click .add': function(){
-    People.update({_id: this._id}, {name: this.name, score: ++this.score});
+    People.update({_id: this._id}, {$set: {score: ++this.score}});
   },
   'click .subtract': function(){
     People.update({_id: this._id}, {$set: {score: --this.score}});
+  },
+  'click .remove': function(){
+    People.remove({_id: this._id});
   }
 });
