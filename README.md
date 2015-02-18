@@ -287,7 +287,11 @@ So we have create, and retrieve (two of the holy CRUD operations), but its time 
 We've got a hefty list of people now, its time to start showing our love (or lack thereof) for each of them. The first step is to add some buttons to the line with each of our people. One for adding to the score and one for taking away should be fine.
 
 ```xml
-<li><span>{{name}} : {{score}}</span><button class="add">+</button><button class="subtract">-</button></li>
+<li>
+  <span>{{name}} : {{score}}</span>
+  <button class="add">+</button>
+  <button class="subtract">-</button>
+</li>
 
 ```
 
