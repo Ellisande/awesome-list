@@ -23,6 +23,15 @@ Before embarking on the journey that is Meteor I recommend doing some quick tuto
 * [jQuery](http://www.w3schools.com/jquery/) (events and selectors) [Handlebars](http://javascriptissexy.com/handlebars-js-tutorial-learn-everything-about-handlebars-js-javascript-templating/)
 * [Mongo](http://docs.mongodb.org/manual/tutorial/getting-started/)
 
+## Getting Started
+You can get started with the tutorial by cloning the git repository and jumping to the first step where Meteor is setup. Use the following commands to do that:
+
+```bash
+git clone https://github.com/Ellisande/awesome-list
+cd awesome-list
+git reset --hard 2.0
+```
+
 ## 1.0 (i) You Better Start from the Start
 
 Ok, you have a blank folder awaiting the wonderousness of your new meteor project. Lets fill it with something that improves upon nothing.
